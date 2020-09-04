@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% block body %}
+
+  <h2 style="margin-top: 100px;
+    margin-left: 80px;">
+    {{profile.user}} </h2>
+
+
+<div class="container">
+
+
+
+  <h4>{{profile.user.email}}</h4>
+
+  
+<div class="row">
+  <a href="{% url 'accounts:profile_edit'%}">Edit Profile</a>
+
+</div>
+{% endblock %}
